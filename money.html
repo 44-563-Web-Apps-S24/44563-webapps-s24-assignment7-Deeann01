@@ -10,9 +10,9 @@
             margin: 0;
             padding: 0;
             color: #333;
+            text-align: center;
         }
-
-
+     
 
         h1 {
             font-size: 2em;
@@ -54,7 +54,6 @@
             display: flex;
             flex-wrap: wrap;
             width: 700px;
-            /* Adjust as needed */
             margin: 0 auto;
         }
 
@@ -75,8 +74,6 @@
             height: auto;
         }
     </style>
-
-
 </head>
 
 <body>
@@ -84,62 +81,108 @@
     <div>Click on the locations to find coins, beware the monster</div>
     <div id="locations">Number of locations checked is zero</div>
     <div id="score">Score is zero</div>
-    <div><b>Click for help</b></div>
+    <div onclick="help()"><b>Click for help</b></div>
     <div id="help"> Help report</div>
-
     <div class="container">
         <div class="row">
-            <div class="location"><img src="building.jpg" alt="Building"></div>
-            <div class="location"><img src="building.jpg" alt="Building"></div>
-            <div class="location"><img src="building.jpg" alt="Building"></div>
-            <div class="location"><img src="building.jpg" alt="Building"></div>
-            <div class="location"><img src="building.jpg" alt="Building"></div>
+            <div class="location"><img src="building.jpg" alt="Building" id="pic0" onclick="check(0)"></div>
+            <div class="location"><img src="building.jpg" alt="Building" id="pic1" onclick="check(1)"></div>
+            <div class="location"><img src="building.jpg" alt="Building" id="pic2" onclick="check(2)"></div>
+            <div class="location"><img src="building.jpg" alt="Building" id="pic3" onclick="check(3)"></div>
+            <div class="location"><img src="building.jpg" alt="Building" id="pic4" onclick="check(4)"></div>
         </div>
         <div class="row">
-            <div class="location"><img src="building.jpg" alt="Building"></div>
-            <div class="location"><img src="building.jpg" alt="Building"></div>
-            <div class="location"><img src="building.jpg" alt="Building"></div>
-            <div class="location"><img src="building.jpg" alt="Building"></div>
-            <div class="location"><img src="building.jpg" alt="Building"></div>
+            <div class="location"><img src="building.jpg" alt="Building" id="pic5" onclick="check(5)"></div>
+            <div class="location"><img src="building.jpg" alt="Building" id="pic6" onclick="check(6)"></div>
+            <div class="location"><img src="building.jpg" alt="Building" id="pic7" onclick="check(7)"></div>
+            <div class="location"><img src="building.jpg" alt="Building" id="pic8" onclick="check(8)"></div>
+            <div class="location"><img src="building.jpg" alt="Building" id="pic9" onclick="check(9)"></div>
         </div>
         <div class="row">
-            <div class="location"><img src="building.jpg" alt="Building"></div>
-            <div class="location"><img src="building.jpg" alt="Building"></div>
-            <div class="location"><img src="building.jpg" alt="Building"></div>
-            <div class="location"><img src="building.jpg" alt="Building"></div>
-            <div class="location"><img src="building.jpg" alt="Building"></div>
+            <div class="location"><img src="building.jpg" alt="Building" id="pic10" onclick="check(10)"></div>
+            <div class="location"><img src="building.jpg" alt="Building" id="pic11" onclick="check(11)"></div>
+            <div class="location"><img src="building.jpg" alt="Building" id="pic12" onclick="check(12)"></div>
+            <div class="location"><img src="building.jpg" alt="Building" id="pic13" onclick="check(13)"></div>
+            <div class="location"><img src="building.jpg" alt="Building" id="pic14" onclick="check(14)"></div>
         </div>
         <div class="row">
-            <div class="location"><img src="building.jpg" alt="Building"></div>
-            <div class="location"><img src="building.jpg" alt="Building"></div>
-            <div class="location"><img src="building.jpg" alt="Building"></div>
-            <div class="location"><img src="building.jpg" alt="Building"></div>
-            <div class="location"><img src="building.jpg" alt="Building"></div>
+            <div class="location"><img src="building.jpg" alt="Building" id="pic15" onclick="check(15)"></div>
+            <div class="location"><img src="building.jpg" alt="Building" id="pic16" onclick="check(16)"></div>
+            <div class="location"><img src="building.jpg" alt="Building" id="pic17" onclick="check(17)"></div>
+            <div class="location"><img src="building.jpg" alt="Building" id="pic18" onclick="check(18)"></div>
+            <div class="location"><img src="building.jpg" alt="Building" id="pic19" onclick="check(19)"></div>
         </div>
         <div class="row">
-            <div class="location"><img src="building.jpg" alt="Building"></div>
-            <div class="location"><img src="building.jpg" alt="Building"></div>
-            <div class="location"><img src="building.jpg" alt="Building"></div>
-            <div class="location"><img src="building.jpg" alt="Building"></div>
-            <div class="location"><img src="building.jpg" alt="Building"></div>
+            <div class="location"><img src="building.jpg" alt="Building" id="pic20" onclick="check(20)"></div>
+            <div class="location"><img src="building.jpg" alt="Building" id="pic21" onclick="check(21)"></div>
+            <div class="location"><img src="building.jpg" alt="Building" id="pic22" onclick="check(22)"></div>
+            <div class="location"><img src="building.jpg" alt="Building" id="pic23" onclick="check(23)"></div>
+            <div class="location"><img src="building.jpg" alt="Building" id="pic24" onclick="check(24)"></div>
         </div>
         <div class="row">
-            <div class="location"><img src="building.jpg" alt="Building"></div>
-            <div class="location"><img src="building.jpg" alt="Building"></div>
-            <div class="location"><img src="building.jpg" alt="Building"></div>
-            <div class="location"><img src="building.jpg" alt="Building"></div>
-            <div class="location"><img src="building.jpg" alt="Building"></div>
+            <div class="location"><img src="building.jpg" alt="Building" id="pic25" onclick="check(25)"></div>
+            <div class="location"><img src="building.jpg" alt="Building" id="pic26" onclick="check(26)"></div>
+            <div class="location"><img src="building.jpg" alt="Building" id="pic27" onclick="check(27)"></div>
+            <div class="location"><img src="building.jpg" alt="Building" id="pic28" onclick="check(28)"></div>
+            <div class="location"><img src="building.jpg" alt="Building" id="pic29" onclick="check(29)"></div>
         </div>
         <div class="row">
-            <div class="location"><img src="building.jpg" alt="Building"></div>
-            <div class="location"><img src="building.jpg" alt="Building"></div>
-            <div class="location"><img src="building.jpg" alt="Building"></div>
-            <div class="location"><img src="building.jpg" alt="Building"></div>
-            <div class="location"><img src="building.jpg" alt="Building"></div>
+            <div class="location"><img src="building.jpg" alt="Building" id="pic30" onclick="check(30)"></div>
+            <div class="location"><img src="building.jpg" alt="Building" id="pic31" onclick="check(31)"></div>
+            <div class="location"><img src="building.jpg" alt="Building" id="pic32" onclick="check(32)"></div>
+            <div class="location"><img src="building.jpg" alt="Building" id="pic33" onclick="check(33)"></div>
+            <div class="location"><img src="building.jpg" alt="Building" id="pic34" onclick="check(34)"></div>
         </div>
-      
     </div>
 
+    <script>
+        let score = 0,
+            locations = 0,
+            lastLocation = 0,
+            fancyCoinLocations = [2, 5, 14, 19, 23, 33],
+            monsterLocation = 20,
+            gameOver = false;
+        let positionIds = ["pic0", "pic1", "pic2", "pic3", "pic4", "pic5", "pic6", "pic7", "pic8", "pic9", "pic10", "pic11", "pic12", "pic13", "pic14", "pic15", "pic16", "pic17", "pic18", "pic19", "pic20", "pic21", "pic22", "pic23", "pic24", "pic25", "pic26", "pic27", "pic28", "pic29", "pic30", "pic31", "pic32", "pic33", "pic34", "pic35"];
+
+
+        function check(position) {
+            if (!gameOver) {
+                let image = document.getElementById(positionIds[position]);
+
+                if (position === monsterLocation) {
+                    image.setAttribute("src", "monster.jpg");
+                    gameOver = true;
+                    score -= 5;
+                } else if (fancyCoinLocations.includes(position)) {
+                    image.setAttribute("src", "Fanciercoin.jpg");
+                    score += 3;
+                } else {
+                    image.setAttribute("src", "NormalCoin.jpg");
+                    score += 1;
+                }
+
+                locations++;
+                document.getElementById("locations").innerText = `Number of locations checked is ${locations}`;
+                document.getElementById("score").innerText = `Score is ${score}`;
+                lastLocation = position;
+            }
+        }
+
+        function help() {
+            let returnValue = "All Clear"
+            let row = Math.floor(lastLocation / 5);
+            let col = lastLocation % 5;
+            let kinshipLocations = [lastLocation - 1, lastLocation + 1, lastLocation - 5, lastLocation + 5];
+            kinshipLocations.forEach(kinshipLocation => {
+                if (fancyCoinLocations.includes(kinshipLocation))
+                    returnValue = "So close"
+            });
+            if (Math.abs(row - Math.floor(monsterLocation / 5)) <= 1 && Math.abs(col - (monsterLocation % 5)) <= 1) {
+                returnValue = "Grrr"
+            }
+            document.getElementById("help").innerHTML = returnValue
+        }
+    </script>
 </body>
 
 </html>
