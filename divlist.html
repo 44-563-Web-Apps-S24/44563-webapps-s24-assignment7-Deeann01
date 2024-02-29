@@ -38,6 +38,7 @@
 		<button onclick="makeNewDiv()">Add end</button>
 		<button onclick="addFront()">Add front</button>
 		<button onclick="remove()">Remove</button>
+        <button onclick="swap()">Swap</button>
 		<div class="flex-container" id="target">
 			<div class="divlist">First item</div>
 			<div class="divlist">Second item</div>
@@ -76,6 +77,24 @@
 		element.setAttribute("class", " divlist")
 		container.insertBefore(element, container.firstChild);
 	}
+
+
+    function swap() 
+    {
+            let divListItems = document.getElementsByClassName("divlist");
+            let container = document.getElementById("target");
+            let swap1 = Math.floor(Math.random() * divListItems.length);
+            let swap2 = Math.floor(Math.random() * divListItems.length);
+            let Element1 = document.getElementsByClassName("divlist")[swap1];
+            let Element2 = document.getElementsByClassName("divlist")[swap2];
+            if (divListItems.length > 1) {
+                let temp =Element1.innerHTML;
+                Element1.innerHTML = Element2.innerHTML;
+                Element2.innerHTML = temp;
+            }
+        }
+
+    
 </script>
 
 </html>
