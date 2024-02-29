@@ -27,6 +27,7 @@
       }
 
       function startTimer() {
+        let countDown = Math.floor(Math.random() * 9) + 2;
           for (let i = 0; i < 5; i++) {
               setTimeout(() => {
                   document.getElementById('counter').innerHTML = "Count: " + i;
@@ -41,7 +42,7 @@
                   let elapsedTime = currentTime - stopTime;
                   document.getElementById('target').innerHTML = "Time was " + elapsedTime + " milliseconds";
               }
-          }, 4000);
+          }, countDown*1000+4000);
         }
       
   </script>
